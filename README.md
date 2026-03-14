@@ -2,25 +2,124 @@
 <!-- Replace X and Title -->
 Course : LEIC
 Student (s): Martim Ceirão
-Date : 03/03/2026
+Date : 14/03/2026
 Repository URL : https://github.com/MarSilller/TP1.git
 ---
+
 ## 1. Introduction
-Setup applications and run begginer kotlin codes.
+
+Welcome to my GitHub repository. This project contains several branches with exercises developed using **Android Studio** and **IntelliJ IDEA**.
+
+The exercises focus on learning the fundamentals of **Android development** using **Kotlin** and **XML**. They include basic introductory programs such as **Hello World**, as well as small applications designed to practice core concepts.
+
+Some of the projects included in this repository are:
+
+* A simple **System Information App**
+* A **Virtual Library Management System** developed using the Kotlin programming language
+
+The purpose of this repository is to demonstrate the basic concepts and practical exercises completed while learning Android development.
+
 <!-- Purpose of the assignment , problem description , and objectives . -->
+
 ## 2. System Overview
-<!-- High - level description of the solution , main features , and use cases .
--->
+
+### Kotlin Exercises
+
+**Exercise 1 – Arrays**
+This exercise was used to learn about arrays in Kotlin. An array containing the first **50 perfect squares** is created and printed, helping to understand array construction, iteration, and output.
+
+**Exercise 2 – Calculator**
+This project implements a simple calculator capable of performing arithmetic operations as well as **bitwise operations**, including **shift left**, **shift right**, and the boolean operations **AND**, **OR**, and **NOT**.
+The exercise was useful for understanding how to work with different variable types, perform operations on them, print results, and improve the program using **exception handling**.
+
+**Exercise 3 – Ball Bounce Simulation**
+This program calculates the **number of bounces** and the **maximum height** of a bouncing ball using the `generateSequence` function. Each bounce reaches **60% of the previous height** (losing 40%), and the sequence continues until either **15 bounces occur** or the bounce height drops below **1 unit**.
+
+### Android Applications
+
+**Hello World App**
+This application was developed in **Android Studio** to learn the basic structure of an Android app. The interface includes an **image**, a **calendar**, and personalized **TextViews** with custom sizes and colors.
+
+**System Information App**
+This application displays system information about the device. It demonstrates how to manipulate interface elements from the layout using **Kotlin code**, and how to retrieve device information using the **Build** class, which provides details about the device’s system and configuration (as the name would suggest).
+
+<!-- High - level description of the solution , main features , and use cases .-->
+
 ## 3. Architecture and Design
-<!-- Architecture , folder structure , design patterns , and justification of
-key decisions . -->
+
+For simplicity and ease of understanding, the projects and applications mostly use the default configurations and structures provided by the development environments. 
+
+Each exercise developed in IntelliJ IDEA is placed inside its own package so that the programs remain organized and easy to distinguish from one another. This helps avoid confusion between exercises and keeps the project structure clear.
+
+Additionally, the GitHub repository organizes the exercises into separate branches. Each branch corresponds to a specific exercise or project, which further helps keep the work structured and makes it easier to navigate between the different implementations.
+
+<!-- Architecture , folder structure , design patterns , and justification ofkey decisions . -->
+
 ## 4. Implementation
-<!-- Implementation details : main modules , components , algorithms , and
-relevant code excerpts . -->
+
+The implementation of this repository consists of three Kotlin console exercises and two Android applications. Each exercise focuses on practicing specific programming concepts such as arrays, control structures, exception handling, and sequence generation.
+
+### Exercise 1 – Perfect Squares with Arrays
+
+This program generates and prints the first **50 perfect squares** using three different approaches to demonstrate different ways of creating and populating arrays in Kotlin.
+
+* Using an **IntArray with a loop**
+* Using a **range and map function**
+* Using an **Array with a lambda initializer**
+
+This exercise demonstrates array indexing, iteration, and Kotlin collection functions such as `map()` and `joinToString()`.
+
+### Exercise 2 – Calculator with Logical and Bitwise Operations
+
+The second exercise implements a **console-based calculator** capable of performing arithmetic operations (`+`, `-`, `*`, `/`), boolean operations (`AND`, `OR`, `NOT`), and bitwise shift operations (`SHL`, `SHR`).
+
+User input is validated using **exception handling** to ensure that values are numeric and non-negative. The program then uses a `when` statement to determine which operation to execute.
+
+Boolean operations convert the numeric inputs (`0` or `1`) into Boolean values, while bitwise shift operations use Kotlin's `shl` and `shr` operators. Results are also displayed in **hexadecimal or binary format** where relevant.
+
+### Exercise 3 – Ball Bounce Simulation
+
+This program simulates the bouncing of a ball using Kotlin's `generateSequence` function. The user provides the initial height, and each bounce reaches **60% of the previous height**.
+
+The resulting heights are formatted to two decimal places and printed as a list.
+
+### Android Applications
+
+Two Android applications were also implemented using **Kotlin for logic** and **XML for user interface layouts**.
+
+The **Hello World App** was created to understand the basic structure of an Android project and how UI components such as images, calendars, and TextViews are defined and customized in XML.
+
+The **System Information App** retrieves device information using the **Build class** and displays it on screen. This project demonstrates how Kotlin code interacts with elements defined in the XML layout and updates them dynamically.
+
+<!-- Implementation details : main modules , components , algorithms , andrelevant code excerpts . -->
+
 ## 5. Testing and Validation
-<!-- Testing strategy , test cases , scenarios , edge cases , and known
-limitations . -->
+
+Testing for the exercises and applications in this repository was performed manually. Each program was executed multiple times with different inputs to verify that the expected behavior and results were produced.
+
+During development, particular attention was given to identifying errors and unexpected behavior. I personally verified the correctness of each exercise by testing various scenarios and observing the program output.
+
+For the Android applications, **Logcat** was used to monitor runtime feedback, error messages, and debugging information. This helped identify issues in the code and confirm that the applications were functioning correctly during execution.
+
+This approach ensured that the programs handled normal inputs as well as potential error cases appropriately, such as invalid input values or incorrect operations.
+
+<!-- Testing strategy , test cases , scenarios , edge cases , and knownlimitations . -->
+
 ## 6. Usage Instructions
+
+To run or view the programs contained in this repository, first navigate to the **branch** corresponding to the desired exercise or application.
+
+1. Go to the selected branch on the GitHub repository.
+2. Click the **Code** button.
+3. Choose **Download ZIP** to download the full project.
+
+After downloading, extract the ZIP file and open the project in the appropriate development environment:
+
+* **IntelliJ IDEA** for the Kotlin console exercises
+* **Android Studio** for the Android applications
+
+Alternatively, if only a small section of code or a specific exercise is needed, you can browse the repository directly on GitHub and open individual folders or files to **copy the relevant code** without downloading the entire project.
+
 <!-- How to run the project : requirements , setup , configuration , and
 execution steps . -->
 
@@ -28,33 +127,83 @@ execution steps . -->
 
 # Autonomous Software Engineering Sections - only for [ AC OK , AI OK ]
 sections
+
 ## 7. Prompting Strategy
-<!-- Describe the prompts used with AI tools , their purpose , and how they
-evolved . Include representative examples . -->
+
+AI tools were used in a limited and supportive way during the development of this project. The prompts were generally kept simple and focused on solving specific problems or clarifying how certain tools work.
+
+Most of the prompts were used for **troubleshooting issues**, understanding error messages, and improving the documentation of the repository. For example, AI was used to help analyze **Logcat output** when an Android application crashed after rotating the phone to landscape mode. By examining the error logs, it was possible to identify the cause of the crash and correct the problem.
+
+AI was also used for **guidance on working with GitHub**, particularly for understanding how to organize the repository, manage branches, and structure the documentation.
+
+In addition, some prompts were used to assist with writing and improving the **README sections**, helping ensure that the documentation fit the expectations and find better wording where it was poorly written.
+
+Overall, AI was used as a support tool for debugging, documentation, and repository management, while the main implementation and development of the exercises were carried out independently.
+
+<!-- Describe the prompts used with AI tools , their purpose , and how they evolved . Include representative examples . -->
+
 ## 8. Autonomous Agent Workflow
-<!-- Explain how AI tools or agents contributed to development : planning ,
-coding , debugging , testing , documentation , etc . -->
+
+The planning and testing of the exercises and applications were done solely by me. This included deciding how each exercise would be implemented, organizing the structure of the programs, and manually verifying that the results produced by the programs were correct.
+
+AI tools were used more frequently during debugging and documentation. When errors occurred, AI was sometimes used to help interpret error messages or analyze Logcat's output to better understand the cause of the issue.
+
+
+The coding itself was mostly written independently with the help of programming guides and documentation found online. In some cases, the development environment autocomplete features were also used not only to guide me through these programs but also speed up the writing.
+<!-- Explain how AI tools or agents contributed to development : planning , coding , debugging , testing , documentation , etc . -->
+
 ## 9. Verification of AI - Generated Artifacts
-<!-- Describe how you verified correctness of AI - generated code / designs
-( testing , manual review , static analysis , etc .) . -->
+
+To ensure the correctness of any assistance provided by AI tools, all suggestions and generated content were carefully reviewed and tested before being used in the project.
+
+Particular attention was given to the management of the GitHub repository to avoid losing work and to maintain a clear structure between the different exercises and branches. Changes were verified using Youtube guides before being committed to ensure that the repository remained organized and functional.
+<!-- Describe how you verified correctness of AI - generated code / designs ( testing , manual review , static analysis , etc .) . -->
+
 ## 10. Human vs AI Contribution
-<!-- Clearly state which parts were primarily human - developed and which
-were AI - assisted . -->
+
+The **Documentation** was mostly written independently altough AI tools were able to come up with better wording and fix spelling mistakes.
+The **Coding** was also almost clear of AI tools except for some usage of the autocomplete feature that I were provided with.   
+The **Troubleshooting** was only rellied on AI tools when I was completely helpless and couldn't find any posts discussing my problems.
+
+<!-- Clearly state which parts were primarily human - developed and which were AI - assisted . -->
+
 ## 11. Ethical and Responsible Use
-<!-- Reflect on risks , limitations , biases , or inappropriate outputs from
-AI tools and how they were handled . -->
+
+While AI tools are helpful these exercises were done with the intent of **learning**, and for that purpose, they **must** be used with a lot of **limitation**.
+Any use of AI tools, specifically the autocomplete feature, was **not** just "copied and pasted," as I took the time to ensure everything was correct and that I **understood and learned** what was being done.
+<!-- Reflect on risks , limitations , biases , or inappropriate outputs from AI tools and how they were handled . -->
+
 ---
 # Development Process
 ## 12. Version Control and Commit History
-<!-- Describe how version control was used . The commit history must
-reflect continuous work ( not only final commits ). -->
+
+After each program and app was completed and debugged it was added to the github as a seperate branch.
+
+<!-- Describe how version control was used . The commit history mustreflect continuous work ( not only final commits ). -->
+
 ## 13. Difficulties and Lessons Learned
-<!-- Main challenges , mistakes , insights , and skills acquired during the
-assignment . -->
+
+During this assignment, some of the main challenges involved configuring the development environment and organizing the workspace using IntelliJ IDEA, Android Studio, and GitHub. Learning how to manage branches and properly document the repository also required some time and practice.
+
+Working with Kotlin and XML layouts helped improve my understanding of programming concepts and how Android applications connect interface elements with code.
+
+One notable mistake occurred when the application crashed after rotating the device to landscape mode. Investigating the issue through Logcat helped identify the problem and reinforced the importance of testing applications in different scenarios.
+<!-- Main challenges , mistakes , insights , and skills acquired during theassignment . -->
+
 ## 14. Future Improvements
-<!-- Possible extensions , optimizations , or features that could be added
-in future work . -->
+
+One possible improvement would be expanding the System Information App, which is currently very bare bones. The application could benefit from better structuring, additional and a more organized user interface.
+
+More features could use improvements such as the documentation, I believe the current github layout I came up with is not perfect.
+
+For the remaining exercises, improvements could include refining the code structure and adding more features or options to further explore Kotlin programming concepts since what was coded was basically the bare minimum one could ask.
+<!-- Possible extensions , optimizations , or features that could be addedin future work . -->
+
 ---
 ## 15. AI Usage Disclosure ( Mandatory )
-<!-- List all AI tools used (e.g., ChatGPT , Copilot , etc .) , how they were
-used , and confirmation that you remain responsible for all content . -->
+
+The AI tools I used while working on this project were only ChatGPT, where I could paste Logcat's log for examination and the README entire file to find spelling mistakes, and the autocomplete feature of the programing spaces I used to fill in some lines of code.
+
+I confirm that I remain responsible for all content included in this project. While AI tools were occasionally used for assistance, all code, decisions, and final content were reviewed and validated by me before being included in the repository.
+
+<!-- List all AI tools used (e.g., ChatGPT , Copilot , etc .) , how they were used , and confirmation that you remain responsible for all content . -->
