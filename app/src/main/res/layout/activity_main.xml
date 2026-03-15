@@ -7,6 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="76dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:contentDescription="@string/just_smile"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/smile_emoji"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="112dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:focusable="true"
+        android:contentDescription="@string/just_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/smile_emoji"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="196dp"
+        android:visibility="invisible"
+        android:contentDescription="@string/just_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/smile_emoji"
+        tools:ignore="ImageContrastCheck" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -40,6 +86,9 @@
         android:layout_height="251dp"
         android:layout_marginTop="100dp"
         android:contentDescription="@string/just_smile"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
