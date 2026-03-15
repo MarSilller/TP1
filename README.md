@@ -236,7 +236,7 @@ For the remaining exercises, improvements could include refining the code struct
 
 The AI tools I used while working on this project were only ChatGPT, where I could paste Logcat's log for examination and the README entire file to find spelling mistakes, and the autocomplete feature of the programing spaces I used to fill in some lines of code.
 
-It also also suggested by ChatGPT a simpler version of the `showBooks()` and `searchByAuthor()` functions in the Virtual Library program, although I decided to keep mine seeing how it wouldn't have been my idea, and because of that it was moved to a comment at the end of the code.
+It was also suggested by ChatGPT a simpler version of the `showBooks()` and `searchByAuthor()` functions in the Virtual Library program, although I decided to keep mine seeing how it wouldn't have been my idea, and because of that it was moved to a comment at the end of the code.
 
 I confirm that I remain responsible for all content included in this project. While AI tools were occasionally used for assistance, all code, decisions, and final content were reviewed and validated by me before being included in the repository.
 
