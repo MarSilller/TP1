@@ -93,7 +93,17 @@ The resulting heights are formatted to two decimal places and printed as a list.
 
 Two Android applications were also implemented using **Kotlin for logic** and **XML for user interface layouts**.
 
-The **Hello World App** was created to understand the basic structure of an Android project and how UI components such as images, calendars, and TextViews are defined and customized in XML.
+The Hello World App was created to understand the basic structure of an Android project and how UI components such as images, calendars, and TextViews are defined and customized in XML.
+
+During development, the application was slightly extended to explore simple UI interaction and configuration changes.
+
+First, the application bar displaying the app name was enabled by modifying the theme configuration. This was done by removing the `NoActionBar` attribute from the theme settings (as I noticed from the provided study material it was enabled in one of the pictures of the app), which allowed the application's name to appear at the top of the screen.
+
+A small interactive feature was also added. When the user clicks the main image, that image becomes invisible and three previously hidden images become visible.
+
+The application then loads a list of PNG images stored in the `drawable` folder, shuffles the list, and assigns the images to the three visible ImageViews. This creates a simple slot-machine-like effect where each click produces a random combination of images.
+
+One limitation of the current implementation is that the same image cannot appear more than once in a result. Because the program selects images from different indices of the shuffled list, duplicates are not possible, which slightly reduces the realism of the slot machine behavior.
 
 The **System Information App** retrieves device information using the **Build class** and displays it on screen. This project demonstrates how Kotlin code interacts with elements defined in the XML layout and updates them dynamically.
 
@@ -141,6 +151,8 @@ After downloading, extract the ZIP file and open the project in the appropriate 
 
 * **IntelliJ IDEA** for the Kotlin console exercises
 * **Android Studio** for the Android applications
+
+To run the slot machine game inside the Hello Android World app you simply need to press the picture and then to keep playing you can press the middle image.
 
 Alternatively, if only a small section of code or a specific exercise is needed, you can browse the repository directly on GitHub and open individual folders or files to **copy the relevant code** without downloading the entire project.
 
@@ -227,6 +239,8 @@ This exercise helped reinforce concepts already learned in object oriented progr
 One possible improvement would be expanding the System Information App, which is currently very bare bones. The application could benefit from better structuring, additional and a more organized user interface.
 
 More features could use improvements such as the documentation, I believe the current github layout I came up with is not perfect.
+
+The Hello Android World had a feature to simulate a slot machine game altought this one is pretty flawd seeing how it can't generate duplicate numbers, meaning the person shall never win.
 
 For the remaining exercises, improvements could include refining the code structure and adding more features or options to further explore Kotlin programming concepts since what was coded was basically the bare minimum one could ask.
 <!-- Possible extensions , optimizations , or features that could be addedin future work . -->
