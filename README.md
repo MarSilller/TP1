@@ -35,6 +35,12 @@ The exercise was useful for understanding how to work with different variable ty
 **Exercise 3 – Ball Bounce Simulation**
 This program calculates the **number of bounces** and the **maximum height** of a bouncing ball using the `generateSequence` function. Each bounce reaches **60% of the previous height** (losing 40%), and the sequence continues until either **15 bounces occur** or the bounce height drops below **1 unit**.
 
+**Exercise 4 – Virtual Library Management System**
+This exercise implements a small Virtual Library Management System in Kotlin using object-oriented programming concepts.
+It includes an abstract Book class, specialized subclasses for digital and physical books, and a Library class
+
+The project was useful for getting more familiarized with the kotlin language as we transition from java and also to learn about comanion objects and data classes 
+
 ### Android Applications
 
 **Hello World App**
@@ -91,6 +97,24 @@ The **Hello World App** was created to understand the basic structure of an Andr
 
 The **System Information App** retrieves device information using the **Build class** and displays it on screen. This project demonstrates how Kotlin code interacts with elements defined in the XML layout and updates them dynamically.
 
+### Exercise 4 – Virtual Library Management System
+
+This program simulates a **basic library system** using Kotlin.
+
+The abstract Book class defines common book information and includes a custom getter for the publication category and a setter to prevent invalid values for available copies.
+
+Two subclasses extend this class:
+
+* DigitalBook – adds file size and format information
+
+* PhysicalBook – adds weight and hardcover information
+
+The Library class stores books in a mutableList and provides functions to add, borrow, return, display, and search books.
+
+A **companion object** is used to track the total number of books added to the library.
+
+At the end of the code, I also included a simpler alternative implementation for the `showBooks()` and `searchByAuthor()` functions using the overridden `toString()` method as an honorable mention.
+
 <!-- Implementation details : main modules , components , algorithms , andrelevant code excerpts . -->
 
 ## 5. Testing and Validation
@@ -133,6 +157,10 @@ sections
 AI tools were used in a limited and supportive way during the development of this project. The prompts were generally kept simple and focused on solving specific problems or clarifying how certain tools work.
 
 Most of the prompts were used for **troubleshooting issues**, understanding error messages, and improving the documentation of the repository. For example, AI was used to help analyze **Logcat output** when an Android application crashed after rotating the phone to landscape mode. By examining the error logs, it was possible to identify the cause of the crash and correct the problem.
+
+AI tools were occasionally used to clarify some Kotlin features that I had difficulty finding or understanding on the virtual library exercise, particularly the use of companion objects.
+
+ChatGPT was also able to suggest a simpler implementation for the `showBooks()` and `searchByAuthor()` functions. I kept my original implementation but included the alternative version at the end of the code as an honorable mention.
 
 AI was also used for **guidance on working with GitHub**, particularly for understanding how to organize the repository, manage branches, and structure the documentation.
 
@@ -188,6 +216,10 @@ During this assignment, some of the main challenges involved configuring the dev
 Working with Kotlin and XML layouts helped improve my understanding of programming concepts and how Android applications connect interface elements with code.
 
 One notable mistake occurred when the application crashed after rotating the device to landscape mode. Investigating the issue through Logcat helped identify the problem and reinforced the importance of testing applications in different scenarios.
+
+One of the main challenges in the exercise of the virtual library was understanding and finding some Kotlin features, especially the companion object, where a lot of time was put into searching for youtube tutorials and basic guides online as well as some AI assistance as a last resort.
+This exercise helped reinforce concepts already learned in object oriented programming as well as some new features that differ from **Java** to **Kotlin**.
+
 <!-- Main challenges , mistakes , insights , and skills acquired during theassignment . -->
 
 ## 14. Future Improvements
@@ -203,6 +235,8 @@ For the remaining exercises, improvements could include refining the code struct
 ## 15. AI Usage Disclosure ( Mandatory )
 
 The AI tools I used while working on this project were only ChatGPT, where I could paste Logcat's log for examination and the README entire file to find spelling mistakes, and the autocomplete feature of the programing spaces I used to fill in some lines of code.
+
+It also also suggested by ChatGPT a simpler version of the `showBooks()` and `searchByAuthor()` functions in the Virtual Library program, although I decided to keep mine seeing how it wouldn't have been my idea, and because of that it was moved to a comment at the end of the code.
 
 I confirm that I remain responsible for all content included in this project. While AI tools were occasionally used for assistance, all code, decisions, and final content were reviewed and validated by me before being included in the repository.
 
