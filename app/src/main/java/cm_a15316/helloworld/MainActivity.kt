@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        println(getString(R.string.activity_oncreate_msg, this@MainActivity.localClassName))
+        println ( this@MainActivity . localClassName + " onCreate ")
         val image1 = findViewById<ImageView>(R.id.imageView)
         val image2 = findViewById<ImageView>(R.id.imageView2)
         val image3 = findViewById<ImageView>(R.id.imageView3)
