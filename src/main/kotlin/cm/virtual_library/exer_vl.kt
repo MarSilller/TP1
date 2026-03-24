@@ -34,7 +34,7 @@ abstract class Book( //open allows for inheritance -> this was later changed for
                             if (quantity == 0) {
                                 println("Warning: Book is now out of stock!")
                             }
-                            field = quantity //set value if it's indeed possible
+                            field = quantity //set value if it's indeed possible (wihtout going through the setter and entering an infinite loop)
                         }
                     }
     abstract fun getStorageInfo(): String //abstract function that'll be overridden on each subclass
