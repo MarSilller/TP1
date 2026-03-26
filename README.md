@@ -1,4 +1,4 @@
-# Assignment X Title
+# Assignment 1 Kotlin and Android Tutorial
 <!-- Replace X and Title -->
 Course : LEIC
 Student (s): Martim Ceirão
@@ -125,6 +125,14 @@ A **companion object** is used to track the total number of books added to the l
 
 At the end of the code, I also included a simpler alternative implementation for the `showBooks()` and `searchByAuthor()` functions using the overridden `toString()` method as an honorable mention.
 
+### AI-Generated Exercise
+
+An additional exercise was developed using an AI-assisted approach. The project was created by providing a structured prompt that defined the requirements, expected functionality, user interface elements, and overall project structure.
+
+Before generating the code, an implementation plan was requested and reviewed to ensure correctness and alignment with the intended design. After generation, the produced code contained some errors and inconsistencies, which were manually analyzed and corrected.
+
+This exercise served as an exploration of how AI tools can assist in software development while still requiring human validation, debugging, and understanding.
+
 <!-- Implementation details : main modules , components , algorithms , andrelevant code excerpts . -->
 
 ## 5. Testing and Validation
@@ -156,6 +164,7 @@ To run the slot machine game inside the Hello Android World app you simply need 
 
 Alternatively, if only a small section of code or a specific exercise is needed, you can browse the repository directly on GitHub and open individual folders or files to **copy the relevant code** without downloading the entire project.
 
+In addition, the AI-generated project was tested following the same approach. After correcting the generated errors, the application was executed multiple times to verify that it behaved as expected and met the defined requirements.
 <!-- How to run the project : requirements , setup , configuration , and
 execution steps . -->
 
@@ -177,6 +186,8 @@ ChatGPT was also able to suggest a simpler implementation for the `showBooks()` 
 AI was also used for **guidance on working with GitHub**, particularly for understanding how to organize the repository, manage branches, and structure the documentation.
 
 In addition, some prompts were used to assist with writing and improving the **README sections**, helping ensure that the documentation fit the expectations and find better wording where it was poorly written.
+
+For example, one of the prompts used for the AI-generated project included detailed instructions about the expected functionality, UI elements, and project structure, ensuring that the generated program was up to standards.
 
 Overall, AI was used as a support tool for debugging, documentation, and repository management, while the main implementation and development of the exercises were carried out independently.
 
@@ -204,6 +215,7 @@ Particular attention was given to the management of the GitHub repository to avo
 The **Documentation** was mostly written independently altough AI tools were able to come up with better wording and fix spelling mistakes.
 The **Coding** was also almost clear of AI tools except for some usage of the autocomplete feature that I were provided with.   
 The **Troubleshooting** was only rellied on AI tools when I was completely helpless and couldn't find any posts discussing my problems.
+The **AI-generated exercise** involved a higher level of AI assistance in generating the initial structure and code, but some corrections, validation, and final adjustments were performed manually.
 
 <!-- Clearly state which parts were primarily human - developed and which were AI - assisted . -->
 
@@ -232,6 +244,8 @@ One notable mistake occurred when the application crashed after rotating the dev
 One of the main challenges in the exercise of the virtual library was understanding and finding some Kotlin features, especially the companion object, where a lot of time was put into searching for youtube tutorials and basic guides online as well as some AI assistance as a last resort.
 This exercise helped reinforce concepts already learned in object oriented programming as well as some new features that differ from **Java** to **Kotlin**.
 
+The AI-generated exercise also highlighted that, while AI can accelerate development, it may introduce errors or incomplete implementations, reinforcing the importance of critical analysis and debugging skills. Even though it was a more hands-free project it still takes time and resources to make it happen, especially when the agent generating the code makes mistakes and is forced to start from step one.
+
 <!-- Main challenges , mistakes , insights , and skills acquired during theassignment . -->
 
 ## 14. Future Improvements
@@ -253,5 +267,7 @@ The AI tools I used while working on this project were only ChatGPT, where I cou
 It was also suggested by ChatGPT a simpler version of the `showBooks()` and `searchByAuthor()` functions in the Virtual Library program, although I decided to keep mine seeing how it wouldn't have been my idea, and because of that it was moved to a comment at the end of the code.
 
 I confirm that I remain responsible for all content included in this project. While AI tools were occasionally used for assistance, all code, decisions, and final content were reviewed and validated by me before being included in the repository.
+
+The AI-assisted exercise was included as an additional learning component to explore the role of AI in software development. Despite the use of AI tools, all generated content was reviewed, corrected, and fully understood before being accepted.
 
 <!-- List all AI tools used (e.g., ChatGPT , Copilot , etc .) , how they were used , and confirmation that you remain responsible for all content . -->
